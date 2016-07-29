@@ -15,6 +15,8 @@
 		A35798661CCA1AF900F7FEFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35798641CCA1AF900F7FEFA /* LaunchScreen.storyboard */; };
 		A35798711CCA1AF900F7FEFA /* SQDetailTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A35798701CCA1AF900F7FEFA /* SQDetailTableViewTests.m */; };
 		A357987C1CCA1AF900F7FEFA /* SQDetailTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A357987B1CCA1AF900F7FEFA /* SQDetailTableViewUITests.m */; };
+		A357988B1CCA1B1A00F7FEFA /* SQSubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A357988A1CCA1B1A00F7FEFA /* SQSubViewController.m */; };
+		EAC0E4D21CCE045800155633 /* SQSuperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC0E4D11CCE045800155633 /* SQSuperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		A35798771CCA1AF900F7FEFA /* SQDetailTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQDetailTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A357987B1CCA1AF900F7FEFA /* SQDetailTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQDetailTableViewUITests.m; sourceTree = "<group>"; };
 		A357987D1CCA1AF900F7FEFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A35798891CCA1B1A00F7FEFA /* SQSubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQSubViewController.h; sourceTree = "<group>"; };
+		A357988A1CCA1B1A00F7FEFA /* SQSubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 3; lastKnownFileType = sourcecode.c.objc; path = SQSubViewController.m; sourceTree = "<group>"; };
+		EAC0E4D01CCE045800155633 /* SQSuperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQSuperViewController.h; sourceTree = "<group>"; };
+		EAC0E4D11CCE045800155633 /* SQSuperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQSuperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				A357985A1CCA1AF900F7FEFA /* AppDelegate.m */,
 				A357985C1CCA1AF900F7FEFA /* ViewController.h */,
 				A357985D1CCA1AF900F7FEFA /* ViewController.m */,
+				EAC0E4D01CCE045800155633 /* SQSuperViewController.h */,
+				EAC0E4D11CCE045800155633 /* SQSuperViewController.m */,
+				A35798891CCA1B1A00F7FEFA /* SQSubViewController.h */,
+				A357988A1CCA1B1A00F7FEFA /* SQSubViewController.m */,
 				A357985F1CCA1AF900F7FEFA /* Main.storyboard */,
 				A35798621CCA1AF900F7FEFA /* Assets.xcassets */,
 				A35798641CCA1AF900F7FEFA /* LaunchScreen.storyboard */,
@@ -271,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A357985E1CCA1AF900F7FEFA /* ViewController.m in Sources */,
+				A357988B1CCA1B1A00F7FEFA /* SQSubViewController.m in Sources */,
 				A357985B1CCA1AF900F7FEFA /* AppDelegate.m in Sources */,
 				A35798581CCA1AF900F7FEFA /* main.m in Sources */,
+				EAC0E4D21CCE045800155633 /* SQSuperViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SQDetailTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shu.SQDetailTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SQDetailTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = shu.SQDetailTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +512,7 @@
 				A35798821CCA1AF900F7FEFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A35798831CCA1AF900F7FEFA /* Build configuration list for PBXNativeTarget "SQDetailTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +521,7 @@
 				A35798851CCA1AF900F7FEFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A35798861CCA1AF900F7FEFA /* Build configuration list for PBXNativeTarget "SQDetailTableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +530,7 @@
 				A35798881CCA1AF900F7FEFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
